@@ -1,12 +1,7 @@
 # Template NodeJS Express
-
-<br>
-
 ## 📄 Finalidade
 
 > Facilitar a criação de novos projetos já pré-configurados com Express, Typescript e PrismaORM, uma estrutura de pastas já definidas e melhor separação do código.
-
-<br />
 
 ## 🧪 Principais Tecnologias usadas
 
@@ -15,8 +10,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [ExpressJS](https://expressjs.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Prisma ORM](https://www.prisma.io/)
-
-<br />
 
 ## 🚀 Como iniciar a aplicação
 
