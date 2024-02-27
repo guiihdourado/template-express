@@ -8,7 +8,7 @@ import 'express-async-errors'
 
 import '@shared/container'
 
-import { AppError } from '@shared/errors/AppError'
+import { AppError } from '@shared/application/errors/app-error'
 
 import { router } from './routes'
 

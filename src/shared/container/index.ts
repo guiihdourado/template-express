@@ -1,14 +1,13 @@
 import { container } from 'tsyringe'
 
-import '@shared/container/providers'
+import '@shared/container/providers/hash'
+import '@shared/container/providers/json-token'
+import '@shared/container/providers/storage'
 
-import { UsersRepository } from '@modules/users/infra/prisma/repositories/UsersRepository'
-import { IHashProvider } from '@modules/users/providers/HashProvider/IHashProvider'
-import { BCryptHashProvider } from '@modules/users/providers/HashProvider/implementations/BCryptHashProvider'
-import { IUsersRepository } from '@modules/users/repositories/IUsersRepository'
+import { IUsersRepository } from '@modules/users/application/repositories'
+import { UsersRepository } from '@modules/users/infra/database/prisma/repositories'
 
 container.registerSingleton<IUsersRepository>(
   'UsersRepository',
   UsersRepository,
 )
-container.registerSingleton<IHashProvider>('HashProvider', BCryptHashProvider)
